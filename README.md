@@ -1,1 +1,1 @@
-# Design-of-Two-Input-NAND-Gate-Using-CMOS-Technology
+# Design of Two Input NAND Gate Using CMOS Technology
