@@ -1,0 +1,64 @@
+*  Generated for: PrimeSim
+*  Design library name: cmos_nand_new
+*  Design cell name: nand_new_tb
+*  Design view name: schematic
+.lib 'saed32nm.lib' TT
+
+*Custom Compiler Version S-2021.09
+*Mon Feb 21 11:50:07 2022
+
+.global gnd!
+********************************************************************************
+* Library          : cmos_nand_new
+* Cell             : nand_new
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt nand_new vdd vss va vb vout
+xm1 vout vb net30 vss n105 w=0.1u l=0.03u nf=1 m=1
+xm0 net30 va vss vss n105 w=0.1u l=0.03u nf=1 m=1
+xm3 vout vb vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm2 vout va vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+.ends nand_new
+
+********************************************************************************
+* Library          : cmos_nand_new
+* Cell             : nand_new_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 net6 gnd! va vb y nand_new
+v1 net6 gnd! dc=1.8
+v3 vb gnd! dc=0 pulse ( 0 1.05 0 0.1u 0.1u 5u 10u )
+v2 va gnd! dc=0 pulse ( 0 1.05 0 0.1u 0.1u 5u 10u )
+
+
+
+
+
+
+
+
+.tran '1u' '20u' name=tran
+
+.option primesim_remove_probe_prefix = 0
+.probe v(*) i(*) level=1
+.probe tran v(va) v(vb) v(y)
+
+.temp 25
+
+
+
+.option primesim_output=wdf
+
+
+.option parhier = LOCAL
+
+
+
+
+
+
+.end
