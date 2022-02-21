@@ -27,13 +27,13 @@ The symbol & Truth table of logic NAND function is,
 
 # Tools Used
 • Synopsys Custom Compiler:
- The Synopsys Custom Compiler™ design environment is a modern solution for full-custom analog, custom digital, and mixed-signal IC design. As the heart of the Synopsys Custom Design Platform, Custom Compiler provides design entry, simulation management and analysis, and custom layout editing features. This tool was used to design the circuit on a transistor level.
+The Synopsys Custom Compiler™ design environment is a modern solution for full-custom analog, custom digital, and mixed-signal IC design. As the heart of the Synopsys Custom Design Platform, Custom Compiler provides design entry, simulation management and analysis, and custom layout editing features. This tool was used to design the circuit on a transistor level.
 
 • Synopsys Primewave:
- PrimeWave™ Design Environment is a comprehensive and flexible environment for simulation setup and analysis of analog, RF, mixed-signal design, custom-digital and memory designs within the Synopsys Custom Design Platform. This tool helped in various types of simulations of the above designed circuit.
+PrimeWave™ Design Environment is a comprehensive and flexible environment for simulation setup and analysis of analog, RF, mixed-signal design, custom-digital and memory designs within the Synopsys Custom Design Platform. This tool helped in various types of simulations of the above designed circuit.
 
 • Synopsys 28nm PDK:
- The Synopsys 28nm Process Design Kit(PDK) was used in creation and simulation of the above designed circuit.
+The Synopsys 28nm Process Design Kit(PDK) was used in creation and simulation of the above designed circuit.
  
  # Reference Circuit
  ![sch](https://user-images.githubusercontent.com/100135066/154967434-e0fe4c42-948f-4795-be63-3624135700df.JPG)
